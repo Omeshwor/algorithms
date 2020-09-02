@@ -45,3 +45,11 @@ count_characters([
   "22222222",
   "22222222",
 ])
+
+def count_characters(arr)
+  count = 0
+  for i in arr
+    count += i.length
+  end
+  puts count
+end
