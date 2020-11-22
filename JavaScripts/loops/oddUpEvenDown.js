@@ -19,4 +19,3 @@ console.log(transform([3, 3, 4, 3])) // ➞ [4, 4, 3, 4]
 
 console.log(transform([2, 2, 0, 8, 10])) // ➞ [1, 1, -1, 7, 9]
 
-// Notes
