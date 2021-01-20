@@ -1,0 +1,22 @@
+# Fix the Error: Filtering out Empty Arrays
+
+# I am trying to filter out empty arrays from an array. In other words, I want to transform something that looks like this: ["a", "b", [], [], [1, 2, 3]] to look like ["a", "b", [1, 2, 3]]. My code looks like this:
+
+def removeEmptyArrays(arr)
+  arr.select {|x| x!= [] }
+end
+
+# However, it seems that I've run into a problem, with an error message of undefined method. Fix my code so that all tests pass.
+# Examples
+
+# # What I want:
+# puts removeEmptyArrays([1, 2, [], 4]) #➞ [1, 2, 4]
+# puts removeEmptyArrays(["a", "b", [], [], [1, 2, 3]])
+
+puts removeEmptyArrays(['a', 'b', []])
+# # What I am getting:
+# block in removeEmptyArrays: undefined method empty? for 1:Fixnum (NoMethodError)
+
+# Notes
+
+# N/A
