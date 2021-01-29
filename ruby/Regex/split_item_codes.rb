@@ -20,3 +20,11 @@ puts split_code("MMU778") #➞ ["MMU", 778]
 
 puts split_code("SRPE5532")# ➞ ["SRPE", 5532]
 
+def split_code(item)
+	[item.gsub(/\d/, ''), item.gsub(/[A-Z]/,'').to_i]
+end
+
+def split_code(item)
+  a, n = item.scan(/([a-z]+|\d+)/i).flatten
+  [a, n.to_i]
+end
